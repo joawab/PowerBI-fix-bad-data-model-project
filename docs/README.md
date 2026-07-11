@@ -8,11 +8,26 @@ Fixing a poorly structured Power BI data model: cleaning dimensions, building pr
 
 ---
 
-## 🧱 Original problems
+## 🧱 Project Goal
 
-*What was wrong with the source model. Fill in as you diagnose issues.*
+Original datasource contains 23 unstructured and messy data tables. 
 
-- to be populated
+The goal of the project is to create a galaxy schema with correct dimensions and fact tables.
+
+The chosen methodology is to follow medallion architecture.
+
+### Bronze Layer
+
+Staging query with raw data import.
+
+### Silver Layer
+
+Data exploration, validating and cleaning of each table.
+
+
+### Gold Layer
+
+Building dimension tables and multiple fact tables into a galaxy schema. Creating and validating relationships.
 
 ---
 
