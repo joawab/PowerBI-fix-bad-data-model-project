@@ -35,7 +35,7 @@ Building dimension tables and multiple fact tables into a galaxy schema. Creatin
 
 *What "fixed" looks like for this model.
 
-- [ ] Standardized naming conventions
+- [x] Standardized naming conventions
 - [ ] Clean galaxy schema (facts + dimensions)
 - [ ] Correct relationships
 - [ ] Date dimension in place
@@ -63,8 +63,8 @@ See [Issues](../../issues) for the full task breakdown, from initial exploration
 
 | Stage | Status |
 |---|---|
-| Explore & standardize dimensions | 🔲 |
-| Build fact tables | 🔲 |
+| Explore & standardize dimensions | ✅  |
+| Build fact tables | 🟡 |
 | Date dimension | 🔲 |
 | Connect model | 🔲 |
 | Measures | 🔲 |
