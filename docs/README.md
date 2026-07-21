@@ -31,6 +31,35 @@ Building dimension tables and multiple fact tables into a galaxy schema. Creatin
 
 ---
 
+## 🗂️ Final Data Model
+
+**Dimensions**
+- `dim_customer` - includes primary contact and location (city/region)
+- `dim_product`
+- `dim_campaign`
+- `dim_order_flag`
+- `dim_date` - built as a DAX calculated table
+- `dim_ship_mode`
+- `rls_security` - user-to-region mapping for row-level security
+
+**Facts**
+- `fact_sales`
+- `fact_invoice`
+- `fact_inventory`
+- `fact_sale_target`
+- `fact_campaign`
+- `fact_campaign_coverage`
+- `fact_order_fullfilment`
+
+**Utility**
+- `_measures` - holds all DAX measures
+
+**Staged, not yet in model**
+- `exchange_rates` - cleaned in Power Query, not currently loaded into the data model
+
+Row-level security applied via `rls_security`, mapping user email to region.
+
+
 ## 🎯 Goals
 
 *What "fixed" looks like for this model.
@@ -40,7 +69,7 @@ Building dimension tables and multiple fact tables into a galaxy schema. Creatin
 - [x] Correct relationships
 - [x] Date dimension in place
 - [x] Core measures defined
-- [ ] Row-level security applied
+- [x] Row-level security applied
 
 ---
 
@@ -67,18 +96,13 @@ See [Issues] for the full task breakdown, from initial exploration through final
 | Build fact tables | ✅ |
 | Date dimension | ✅ |
 | Connect model | ✅ |
-| Measures | 🟡 |
-| RLS | 🔲 |
-| Validation | 🔲 |
+| Measures | ✅ |
+| RLS | ✅ |
+| Validation | ✅ |
 
 ---
 
 ## 🛠️ Tools
 
 - Power BI Desktop
-
-
----
-
-## 📝 Notes
 
