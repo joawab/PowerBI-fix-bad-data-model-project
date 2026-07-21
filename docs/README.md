@@ -36,10 +36,10 @@ Building dimension tables and multiple fact tables into a galaxy schema. Creatin
 *What "fixed" looks like for this model.
 
 - [x] Standardized naming conventions
-- [ ] Clean galaxy schema (facts + dimensions)
-- [ ] Correct relationships
-- [ ] Date dimension in place
-- [ ] Core measures defined
+- [x] Clean galaxy schema (facts + dimensions)
+- [x] Correct relationships
+- [x] Date dimension in place
+- [x] Core measures defined
 - [ ] Row-level security applied
 
 ---
@@ -48,8 +48,8 @@ Building dimension tables and multiple fact tables into a galaxy schema. Creatin
 
 Work is tracked via GitHub Issues. Each issue gets its own branch and PR.
 
-**Branch naming:** `type/issue-number-short-name`
-Examples: `feature/7-standardize-dimensions`
+**Branch naming:** `type:issue-number-short-name`
+Examples: `feature:7-standardize-dimensions`
 
 **Types used:** `feature`, `fix`, `chore`
 
@@ -59,15 +59,15 @@ Examples: `feature/7-standardize-dimensions`
 
 ## 📈 Progress
 
-See [Issues](../../issues) for the full task breakdown, from initial exploration through final validation.
+See [Issues] for the full task breakdown, from initial exploration through final validation.
 
 | Stage | Status |
 |---|---|
 | Explore & standardize dimensions | ✅  |
-| Build fact tables | 🟡 |
-| Date dimension | 🔲 |
-| Connect model | 🔲 |
-| Measures | 🔲 |
+| Build fact tables | ✅ |
+| Date dimension | ✅ |
+| Connect model | ✅ |
+| Measures | 🟡 |
 | RLS | 🔲 |
 | Validation | 🔲 |
 
